@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_overview"
+            android:icon="@drawable/ic_nav_home_24dp"
+            android:title="@string/navigation_overview"/>
+
+        <item
+            android:id="@+id/nav_places"
+            android:icon="@drawable/ic_nav_place_24dp"
+            android:title="@string/navigation_places"/>
+
+        <item
+            android:id="@+id/nav_licenses"
+            android:icon="@drawable/ic_nav_chart_24dp"
+            android:title="@string/navigation_licenses"/>
+
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/ic_school_18dp"
+            android:title="@string/navigation_terms"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_remove_24dp"
+            android:title="@string/navigation_logout"/>
+    </group>
+
+    <item android:title="Communication">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/navigation_bug" />
+        </menu>
+    </item>
+
+</menu>

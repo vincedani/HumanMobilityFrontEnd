@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ExpandableListView
+        android:id="@+id/overview_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:groupIndicator="@null"/>
+
+    <TextView
+        android:id="@+id/no_data_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/main_no_data"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_body_primary"
+        tools:ignore="MissingPrefix"/>
+
+    <hu.daniel.vince.humanmobility.view.activity.MaterialProgressBar
+        android:id="@+id/progress"
+        android:layout_width="@dimen/progressBar_size"
+        android:layout_height="@dimen/progressBar_size"
+        android:layout_gravity="center"/>
+
+</FrameLayout>

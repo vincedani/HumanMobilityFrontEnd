@@ -1,0 +1,159 @@
+<resources>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name" translatable="false">HumanMobility</string>
+    <string name="application_name" translatable="false">Human Mobility</string>
+    <string name="application_crash">Unexpected error, please send a report!</string>
+    <string name="application_ok" translatable="false">OK</string>
+    <string name="application_cancel">Cancel</string>
+    <string name="application_yes">Yes</string>
+    <string name="application_loading">Loading…</string>
+    <string name="application_warning">Warning</string>
+    <string name="application_success">Success</string>
+    <string name="application_error">Error</string>
+    <string name="application_error_unknown">Unknown errors.</string>
+    <string name="application_under_construction">Under construction!</string>
+    <string name="application_enabled">Enabled</string>
+    <string name="application_disabled">Disabled</string>
+    <string name="application_start">Start</string>
+    <string name="application_stop">Stop</string>
+    <string name="application_show">Show</string>
+    <string name="application_refresh">Refresh</string>
+    <string name="application_close">Close</string>
+    <string name="application_send">Send</string>
+    <string name="application_thanks">Thank you!</string>
+    <string name="application_add">Add</string>
+    <string name="permission_error">These permissions are required for the application.</string>
+    <string name="services_error">The Google Play Services update are required for the application.</string>
+
+    <!-- Navigation -->
+    <string name="navigation_text">Communication</string>
+    <string name="navigation_overview">Overview</string>
+    <string name="navigation_places">Your places</string>
+    <string name="navigation_licenses">Open source licenses</string>
+    <string name="navigation_bug">Write a bug report</string>
+    <string name="navigation_terms">Terms and Privacy</string>
+    <string name="navigation_">Terms and Privacy</string>
+    <string name="navigation_logout">Logout</string>
+    <string name="navigation_settings">Settings</string>
+
+    <!-- Authentication -->
+
+    <string name="authentication_login">Login</string>
+    <string name="authentication_register">Register</string>
+    <string name="authentication_email">Username</string>
+    <string name="authentication_password">Password</string>
+    <string name="authentication_password_2">Retype password</string>
+    <string name="authentication_accept">By using our application, you agree to our Terms of Service and Privacy Policy.</string>
+    <string name="authentication_terms">Terms of Service and Privacy Policy</string>
+    <string name="authentication_error_empty_email">The username must be at least 6 and maximum 30 characters long.</string>
+    <string name="authentication_error_empty_password">Please enter your password!</string>
+    <string name="authentication_error_short_password">The password must be at least 6 characters long.</string>
+    <string name="authentication_error_not_match_password">Password does not match the confirm password.</string>
+    <string name="authentication_error_contains_password">Passwords must contains </string>
+    <string name="authentication_error_non_letter_password"> a least one non letter </string>
+    <string name="authentication_error_digit_password">a least one digit (0–9) </string>
+    <string name="authentication_error_uppercase_password"> a least one uppercase (A-Z)</string>
+    <string name="authentication_error_lowercase_password">a least one lowercase (a-z)</string>
+    <string name="authentication_error_register_failed">Registration failed!</string>
+    <string name="authentication_error_register_conflict">Username already in use!</string>
+    <string name="authentication_error_register_password">Passwords must have at least one digit and uppercase character!</string>
+    <string name="authentication_error_login_failed">Login failed! </string>
+
+    <!-- Main -->
+
+    <string name="main_today">Today</string>
+    <string name="main_yesterday">Yesterday</string>
+    <string name="main_records">Records</string>
+    <string name="main_errors">Errors</string>
+    <string name="main_sort_minute">%sm</string>
+    <string name="main_sort_hour">%sh</string>
+    <string name="main_sort_day">%sd</string>
+    <string name="main_service_running">Service running</string>
+    <string name="main_service_stopped">Service stopped</string>
+    <string name="main_service_question">{todo.status.question}</string>
+    <string name="main_user_credential_question" formatted="false">{todo.user_credential.question}\n\nDevice: %s\nAndroid: %s\nAccelerometer sensor: %s\nTemperature sensor: %s</string>
+    <string name="main_total">Total</string>
+    <string name="main_no_data">No showed data.</string>
+
+    <!-- Notification -->
+
+    <string name="notification_waiting_for_gps">Please enable location services!</string>>
+
+    <!-- Settings -->
+
+    <string name="settings_title_records">Records</string>
+    <string name="settings_upload">Synchronize</string>
+    <string name="settings_upload_desc">Sending records to server.</string>
+    <string name="settings_upload_started">Background synchronization started.</string>
+    <string name="settings_upload_error" formatted="false">Uploading failed (%s: %s)!</string>
+    <string name="settings_upload_success" formatted="false">Uploading successful (%s, %s)!</string>
+    <string name="settings_clear">Clear database</string>
+    <string name="settings_clear_desc">Deleting all records from device.</string>
+    <string name="settings_clear_question">Clear the database?</string>
+    <string name="settings_clear_action">Clear</string>
+    <string name="settings_clear_success">Deleting successful!</string>
+    <string name="settings_title_sync">Background sync</string>
+    <string name="settings_title_measurement">Background measurement</string>
+    <string name="settings_sync">Enabled</string>
+    <string name="settings_restart">Restart</string>
+    <string name="settings_measurement">Restart background measurement.</string>
+    <string name="settings_sync_desc">Sending records to server in the background.</string>
+    <string name="settings_frequency">Frequency</string>
+    <string name="settings_frequency_30">Every 30 minutes</string>
+    <string name="settings_frequency_60">Every hour</string>
+    <string name="settings_frequency_120">Every 2 hours</string>
+    <string name="settings_frequency_240">Every 4 hours</string>
+    <string name="settings_frequency_480">Every 8 hours</string>
+    <string name="settings_wifi">Upload only through WiFi connection</string>
+    <string name="settings_about">About</string>
+    <string name="settings_version">Version</string>
+    <string name="settings_location_all_sent">HumanMobility: All data is sent</string>
+    <string name="settings_location_remaining">HumanMobility: Remaining (%s) location unsent.</string>
+    <string name="settings_upload_fail" formatted="false">Something went wrong. Please try again later!</string>
+    <string name="settings_huawei_protected">PROTECTED_APPLICATION</string>
+
+    <!-- Places -->
+
+    <string name="place_home">Home</string>
+    <string name="place_work">Workplace</string>
+    <string name="place_school">School</string>
+    <string name="place_others">Others</string>
+    <string name="place_title">Labeled places</string>
+    <string name="place_title_more">More places</string>
+    <string name="place_add">Save current location</string>
+    <string name="place_add_error">Place detection failed!</string>
+    <string name="place_add_success">Detected place saved!</string>
+    <string name="place_remove_success">Selected place removed!</string>
+    <string name="place_add_new">Add new place</string>
+    <string name="place_get_title">Name</string>
+    <string name="place_get_title_empty">Please enter name!</string>
+    <string name="place_get_radius">Radius (in meter)</string>
+    <string name="place_get_radius_error">Please enter radius (min. 10 and max. 100 meter)!</string>
+    <string name="place_remove_question">Do you want to remove this place?</string>
+    <string name="place_remove_action">Remove</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <!-- Bug reports -->
+
+    <string name="bug_report_title">Bug report</string>
+    <string name="bug_report_description">Description</string>
+    <string name="bug_report_succeeded">Succeeded</string>
+    <string name="bug_report_succ_info">Thank you for the feedback!</string>
+    <string name="bug_report_short_message">The description must be at least 6 characters long.</string>
+
+    <!-- Accelerometer service -->
+    <string name="accelerometer_description">Measurement is running</string>
+    <string name="accelerometer_broadcast_name">hu.daniel.vince.humanmobility.RESTART_ACCELEROMETER</string>
+
+    <!-- Battery optimisation -->
+    <string name="battery_opt_title">Huawei protected applications</string>
+    <string name="battery_opt_message">Protect application from battery optimisation.</string>
+    <string name="battery_opt_button">Protect</string>
+    <string name="battery_opt_component">com.huawei.systemmanager</string>
+    <string name="battery_opt_protectActivity">com.huawei.systemmanager.optimize.process.ProtectActivity</string>
+
+
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- [HEADER] -->
+
+    <TextView
+        style="@style/HeaderStyle"
+        android:text="@string/place_title"/>
+
+    <!-- Home -->
+
+    <LinearLayout
+        android:id="@+id/home_layout"
+        style="@style/ListItemLayoutStyle">
+
+        <ImageView
+            style="@style/ListItemLeftIconStyle"
+            android:src="@drawable/ic_home_18dp"/>
+
+        <LinearLayout
+            style="@style/ListItemInnerLayoutStyle">
+
+            <TextView
+                style="@style/ListItemTitleStyle"
+                android:text="@string/place_home"/>
+
+            <TextView
+                android:id="@+id/home_desc_tv"
+                style="@style/ListItemDescStyle"
+                android:text="@string/place_add"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/home_right_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_detect_position_24dp"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/DividerStyle.Icon"/>
+
+    <!-- Workplace -->
+
+    <LinearLayout
+        android:id="@+id/workplace_layout"
+        style="@style/ListItemLayoutStyle">
+
+        <ImageView
+            style="@style/ListItemLeftIconStyle"
+            android:src="@drawable/ic_work_18dp"/>
+
+        <LinearLayout
+            style="@style/ListItemInnerLayoutStyle">
+
+            <TextView
+                style="@style/ListItemTitleStyle"
+                android:text="@string/place_work"/>
+
+            <TextView
+                android:id="@+id/workplace_desc_tv"
+                style="@style/ListItemDescStyle"
+                android:text="@string/place_add"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/workplace_right_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_detect_position_24dp"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/DividerStyle.Icon"/>
+
+    <!-- School -->
+
+    <LinearLayout
+        android:id="@+id/school_layout"
+        style="@style/ListItemLayoutStyle">
+
+        <ImageView
+            style="@style/ListItemLeftIconStyle"
+            android:src="@drawable/ic_school_18dp"/>
+
+        <LinearLayout
+            style="@style/ListItemInnerLayoutStyle">
+
+            <TextView
+                style="@style/ListItemTitleStyle"
+                android:text="@string/place_school"/>
+
+            <TextView
+                android:id="@+id/school_desc_tv"
+                style="@style/ListItemDescStyle"
+                android:text="@string/place_add"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/school_right_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_detect_position_24dp"/>
+
+    </LinearLayout>
+
+    <!-- [HEADER] -->
+
+    <TextView
+        style="@style/HeaderStyle"
+        android:text="@string/place_title_more"/>
+
+</LinearLayout>

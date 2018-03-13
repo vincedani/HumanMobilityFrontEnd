@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Background sync [HEADER] -->
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/HeaderStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_title_measurement" />
+
+        <LinearLayout
+            android:id="@+id/measurement_layout"
+            style="@style/ListItemLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout style="@style/ListItemInnerLayoutStyle">
+
+                <TextView
+                    style="@style/ListItemTitleStyle"
+                    android:text="@string/settings_restart" />
+
+                <TextView
+                    style="@style/ListItemDescStyle"
+                    android:text="@string/settings_measurement" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/HeaderStyle"
+            android:text="@string/settings_title_sync" />
+
+        <!-- Sync enabled -->
+
+        <LinearLayout
+            android:id="@+id/sync_layout"
+            style="@style/ListItemLayoutStyle">
+
+            <LinearLayout
+                style="@style/ListItemInnerLayoutStyle">
+
+                <TextView
+                    style="@style/ListItemTitleStyle"
+                    android:text="@string/settings_sync"/>
+
+                <TextView
+                    style="@style/ListItemDescStyle"
+                    android:text="@string/settings_sync_desc"/>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/sync_chk"
+                style="@style/CheckBoxStyle"/>
+
+        </LinearLayout>
+
+        <View style="@style/DividerStyle"/>
+
+        <!-- Frequency -->
+
+        <LinearLayout
+            android:id="@+id/frequency_layout"
+            style="@style/ListItemLayoutStyle">
+
+            <LinearLayout
+                style="@style/ListItemInnerLayoutStyle">
+
+                <TextView
+                    style="@style/ListItemTitleStyle"
+                    android:text="@string/settings_frequency"/>
+
+                <TextView
+                    android:id="@+id/frequency_desc_tv"
+                    style="@style/ListItemDescStyle"
+                    android:text="{selected}"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/DividerStyle"/>
+
+        <!-- Only wifi -->
+
+        <LinearLayout
+            android:id="@+id/wifi_layout"
+            style="@style/ListItemLayoutStyle">
+
+            <LinearLayout
+                style="@style/ListItemInnerLayoutStyle">
+
+                <TextView
+                    style="@style/ListItemTitleStyle"
+                    android:text="@string/settings_wifi"/>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/wifi_chk"
+                style="@style/CheckBoxStyle"/>
+
+        </LinearLayout>
+
+        <!-- Records [HEADER] -->
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="@string/settings_title_records"/>
+
+        <!-- Upload -->
+
+        <LinearLayout
+            android:id="@+id/upload_layout"
+            style="@style/ListItemLayoutStyle">
+
+            <LinearLayout
+                style="@style/ListItemInnerLayoutStyle">
+
+                <TextView
+                    style="@style/ListItemTitleStyle"
+                    android:text="@string/settings_upload"/>
+
+                <TextView
+                    style="@style/ListItemDescStyle"
+                    android:text="@string/settings_upload_desc"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/DividerStyle"/>
+
+        <!-- Clear -->
+
+        <!-- About [HEADER] -->
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="@string/settings_about"/>
+
+        <!-- Version -->
+
+        <LinearLayout
+            style="@style/ListItemLayoutStyle">
+
+            <LinearLayout
+                style="@style/ListItemInnerLayoutStyle">
+
+                <TextView
+                    style="@style/ListItemTitleStyle"
+                    android:text="@string/settings_version"/>
+
+                <TextView
+                    android:id="@+id/version_desc_tv"
+                    style="@style/ListItemDescStyle"
+                    android:text="{version name}"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

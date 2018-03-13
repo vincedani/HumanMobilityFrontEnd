@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="settings_frequency_array">
+        <item>@string/settings_frequency_30</item>
+        <item>@string/settings_frequency_60</item>
+        <item>@string/settings_frequency_120</item>
+        <item>@string/settings_frequency_240</item>
+        <item>@string/settings_frequency_480</item>
+    </string-array>
+
+</resources>

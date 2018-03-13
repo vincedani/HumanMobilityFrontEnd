@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListItemLayoutStyle">
+
+    <ImageView
+        android:id="@+id/item_place_left_icon"
+        android:layout_width="@dimen/list_left_icon_size"
+        android:layout_height="24dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:scaleType="center"
+        android:src="@drawable/ic_add_24dp"/>
+
+    <TextView
+        style="@style/ListItemTitleStyle"
+        android:text="@string/place_add_new"/>
+
+</LinearLayout>
+

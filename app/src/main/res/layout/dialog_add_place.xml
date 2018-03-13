@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/dialog_side_margin"
+    android:paddingRight="@dimen/dialog_side_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingBottom="8dp">
+
+        <EditText
+            android:id="@+id/place_title_input"
+            style="@style/InputStyle"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:hint="@string/place_get_title"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/place_radius_input"
+            style="@style/InputStyle"
+            android:hint="@string/place_get_radius"
+            android:inputType="numberSigned"/>
+
+        <requestFocus/>
+
+    </LinearLayout>
+
+</ScrollView>

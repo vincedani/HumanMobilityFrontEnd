@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hu.daniel.vince.humanmobility">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".model.handlers.uploadHandler.LocationUploadBroadcastReceiver"
+            android:process=":actigraphyBackground" />
+
+        <receiver
+            android:name=".model.handlers.uploadHandler.BugReportUploadBroadcastReceiver"
+            android:process=":actigraphyBackground" />
+
+        <receiver
+            android:name=".model.handlers.uploadHandler.ActigraphyUploaderBroadcastReceiver"
+            android:process=":actigraphyBackground" />
+
+        <receiver
+            android:name=".model.handlers.location.LocationSaverBroadcastReceiver"
+            android:process=":actigraphyBackground">
+            <intent-filter>
+                <action android:name="hu.daniel.vince.humanmobility.ACTION_START_GPS" />
+                <action android:name="hu.daniel.vince.humanmobility.ACTION_SAVE_RECORD" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".model.handlers.accelerometer.MeasurementRestartBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":actigraphyMeasurement">
+            <intent-filter>
+                <action android:name="hu.daniel.vince.humanmobility.RESTART_ACCELEROMETER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".model.handlers.boot.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":actigraphyBackground">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".model.handlers.uploadHandler.LocationUploaderService"
+            android:exported="true" />
+        <service
+            android:name=".model.handlers.uploadHandler.BugReportUploaderService"
+            android:exported="true" />
+        <service
+            android:name=".model.handlers.uploadHandler.ActigraphyUploaderService"
+            android:exported="true" />
+
+        <service
+            android:name=".model.handlers.accelerometer.SensorService"
+            android:description="@string/accelerometer_description"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":actigraphyMeasurement"
+            android:stopWithTask="false" />
+    </application>
+
+</manifest>
